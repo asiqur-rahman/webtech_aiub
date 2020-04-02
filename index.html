@@ -1,0 +1,48 @@
+<html>
+<head>
+  <title>Login Page</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="hero">
+    <div class="form-box">
+      <div class="button-box">
+        <div id="btn"></div>
+        <button type="button" class="toggle-btn" onclick="login()">Log in</button>
+        <button type="button" class="toggle-btn" onclick="register()">Register</button>
+      </div>
+      <form method="post" action="login.php" class="input-group" id="login">
+        <input type="text" name="uname" placeholder="user-id" class="input-field" required>
+        <input type="password" name="upass" placeholder="user-password" class="input-field" required>
+				<h5 class="input-field" id="error"></h5>
+        <input type="checkbox" class="check-box"><span>Remember Password</span>
+				<input type="submit" value="Submit" name="login-submit" class="submit-btn">
+      </form>
+      <form method="post" action="login.php" class="input-group" id="register">
+        <input type="text" name="uname" value="" placeholder="user-id" class="input-field" required>
+        <input type="text" name="uemail" value="" placeholder="user-email" class="input-field" required>
+        <input type="password" name="upass" value="<?php echo $upass;?>" placeholder="user-password" class="input-field" required>
+				<h5 class="input-field" id="error"></h5>
+        <input type="checkbox" class="check-box"><span>I agreed with the terms and conditions.</span>
+        <button type="submit" class="submit-btn" name="registration-submit">Register</button>
+      </form>
+    </div>
+  </div>
+  <script>
+    var x=document.getElementById("login");
+    var y=document.getElementById("register");
+    var z=document.getElementById("btn");
+    function register(){
+      x.style.left="-400px";
+      y.style.left="50px";
+      z.style.left="110px";
+    }
+    function login(){
+      x.style.left="50px";
+      y.style.left="450px";
+      z.style.left="0px";
+    }
+  </script>
+</body>
+</html>
