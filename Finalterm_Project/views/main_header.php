@@ -11,16 +11,14 @@ if(isset($_POST['logout']))
  ?>
 <html>
 	<head>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		<link rel="stylesheet" href="styles/style.css">
+		<link rel="stylesheet" href="styles/headerStyle.css">
+		<link rel="stylesheet" href="styles/dashboardstyle.css">
+		
 	</head>
 	<body>
-
-		<div class="header-index">
-			<div class="pull-right">
+		<div >
 				<form class="" action="" method="post">
 					<!-- <input class="btn btn-success" type="submit" name="home" value="Home"> -->
-					<input class="btn btn-danger" type="submit" name="logout" value="Logout">
+					<input class="logout_btn" type="submit" name="logout" value="Logout">
 				</form>
-			</div>
 		</div>
