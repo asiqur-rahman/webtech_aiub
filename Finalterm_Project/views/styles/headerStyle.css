@@ -1,0 +1,24 @@
+.logout_btn{
+		margin: 1% 1% 0 0;
+		padding: 10px;
+		background-color: red;
+		border-radius: 10%;
+		color: white;
+		font-weight: bold;
+		border-style: none;
+		position:fixed;
+    top:0;
+    right:0;
+}
+footer h4{
+	position:fixed;
+  margin-bottom: 0;
+  padding: 10px;
+	left:0;
+	bottom:0;
+	width: 100%;
+	color: black;
+	background-color: #F5EFEE;
+	text-align: center;
+	font-family:consolas;
+}
