@@ -1,7 +1,10 @@
-.logout_btn{
+*{
+	margin:0;
+	padding: 0;
+}
+.llogout_btn{
 		margin: 1% 1% 0 0;
 		padding: 10px;
-		background-color: red;
 		border-radius: 10%;
 		color: white;
 		font-weight: bold;

@@ -43,32 +43,27 @@ $GLOBALS['array']=array();
     <div class="sidebar">
     <header><?php echo $_COOKIE['loggedinuser'];?></header>
       <ul>
-        <li><a href="?page=addCourseTeacher"><i class="fas fa-link"></i>Assign Course Teacher</a></li>
-        <li><a href="?page=addStudent"><i class="fas fa-stream"></i>Add Student</a></li>
-        <li><a href="?page=addNewSection"><i class="fas fa-calendar-week"></i>Add New Section</a></li>
-				<li><a href="?page=seeDetails"><i class="fas fa-calendar-week"></i>See Course Details</a></li>
-      </ul>
+        <li><a href="?page=addNewTeacher"><i class="fas fa-link"></i>Add New Teacher</a></li>
+        <li><a href="?page=addNewCourse"><i class="fas fa-stream"></i>Add New Course</a></li>
+        <li><a href="?page=addNewAdmin"><i class="fas fa-calendar-week"></i>Add New Admin</a></li>
+			</ul>
     </div>
  <section>
    <div class="mainbody">
      <div class="header">
        <?php
         if (isset($_GET['page'])) {
-          if($_GET['page']=="addCourseTeacher"){
-            echo "<h1>add Course Teacher</h1>";
-            $GLOBALS['pageName']="assignCourseTeacher.php";
+          if($_GET['page']=="addNewTeacher"){
+            echo "<h1>add New Teacher</h1>";
+            $GLOBALS['pageName']="addTeacher.php";
           }
-          else if($_GET['page']=="addStudent"){
-            echo "<h1>add Student</h1>";
-						$GLOBALS['pageName']="addStudent.php";
+          else if($_GET['page']=="addNewCourse"){
+            echo "<h1>add New Course</h1>";
+						$GLOBALS['pageName']="addCourse.php";
           }
-          else if($_GET['page']=="addNewSection"){
-            echo "<h1>add New Section</h1>";
-						$GLOBALS['pageName']="addNewSection.php";
-          }
-					else if($_GET['page']=="seeDetails"){
-            echo "<h1>See Details</h1>";
-						$GLOBALS['pageName']="seeCourseDetails.php";
+          else if($_GET['page']=="addNewAdmin"){
+            echo "<h1>add New Admin</h1>";
+						$GLOBALS['pageName']="addAdmin.php";
           }
         }
        ?>

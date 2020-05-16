@@ -15,23 +15,23 @@
     if($user[0]!=""){
       if($user[0]["permission"]!=0)
       {
-        setcookie("loggedinuser",$uname,time()+120);
+        setcookie("loggedinuser",$uname,time()+1020);
         $user=$user[0]["usertype"];
         if($user=="admin")
         {
-          header("Location:dashboard.php?user=".$user);
+          header("Location:adminpanel/adminDashboard.php?user=".$user);
         }
         else if($user=="student")
         {
-          header("Location:dashboard.php?user=".$user);
+          header("Location:studentpanel/studentDashboard.php?user=".$user);
         }
         else if($user=="teacher")
         {
-          header("Location:dashboard.php?user=".$user);
+          header("Location:teacherPanel/teacherDashboard.php?user=".$user);
         }
         else if($user=="superAdmin")
         {
-          header("Location:dashboard.php?user=".$user);
+          header("Location:superAdminPanel/superAdminDashboard.php?user=".$user);
         }
         else {
           header("Location:dashboard.php?user=".$user[0]["usertype"]);

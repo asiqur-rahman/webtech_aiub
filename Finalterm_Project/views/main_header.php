@@ -11,9 +11,8 @@ if(isset($_POST['logout']))
  ?>
 <html>
 	<head>
+		<title><?php $_COOKIE['loggedinuser']; ?></title>
 		<link rel="stylesheet" href="styles/headerStyle.css">
-		<link rel="stylesheet" href="styles/dashboardstyle.css">
-		
 	</head>
 	<body>
 		<div >

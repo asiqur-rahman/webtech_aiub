@@ -1,3 +1,4 @@
+
 <?php
  include ('../../controllers/adminController.php');
   $sql = "select * from course";
